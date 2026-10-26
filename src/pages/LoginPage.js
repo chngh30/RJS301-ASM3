@@ -93,7 +93,9 @@ const LoginPage = () => {
   return (
     <main
       className={classes.authPage}
-      style={{ backgroundImage: "url('/banner1.jpg')" }}
+      style={{
+        backgroundImage: `url('${process.env.PUBLIC_URL}/banner1.jpg')`
+      }}
     >
       <section className={classes.authForm}>
         <h1 className={classes.authTitle}>SIGN IN</h1>
