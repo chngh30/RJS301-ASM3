@@ -2,6 +2,7 @@
   "name": "rjs-asm03",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://chngh30.github.io/RJS301-ASM3",
   "dependencies": {
     "@reduxjs/toolkit": "^2.13.0",
     "@testing-library/dom": "^10.4.2",
