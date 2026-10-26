@@ -6,26 +6,26 @@ const Footer = () => {
       <div className={classes.footerContainer}>
         <div className={classes.footerColumn}>
           <h3>CUSTOMER SERVICES</h3>
-          <a href="#">Help &amp; Contact Us</a>
-          <a href="#">Returns &amp; Refunds</a>
-          <a href="#">Online Stores</a>
-          <a href="#">Terms &amp; Conditions</a>
+          <span>Help &amp; Contact Us</span>
+          <span>Returns &amp; Refunds</span>
+          <span>Online Stores</span>
+          <span>Terms &amp; Conditions</span>
         </div>
 
         <div className={classes.footerColumn}>
           <h3>COMPANY</h3>
-          <a href="#">What We Do</a>
-          <a href="#">Available Services</a>
-          <a href="#">Latest Posts</a>
-          <a href="#">FAQs</a>
+          <span>What We Do</span>
+          <span>Available Services</span>
+          <span>Latest Posts</span>
+          <span>FAQs</span>
         </div>
 
         <div className={classes.footerColumn}>
           <h3>SOCIAL MEDIA</h3>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
-          <a href="#">Pinterest</a>
+          <span>Twitter</span>
+          <span>Instagram</span>
+          <span>Facebook</span>
+          <span>Pinterest</span>
         </div>
       </div>
     </footer>
