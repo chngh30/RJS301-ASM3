@@ -11,7 +11,7 @@ import RegisterPage from './pages/RegisterPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/RJS301-ASM3">
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
