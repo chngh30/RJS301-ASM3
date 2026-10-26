@@ -1,0 +1,533 @@
+.homePage {
+  width: 100%;
+}
+
+/* Banner section */
+.banner {
+  min-height: 85vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 60px 12%;
+  box-sizing: border-box;
+}
+
+.bannerContent {
+  max-width: 520px;
+}
+
+.bannerSubtitle {
+  color: #888;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.bannerContent h1 {
+  color: #222;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 28px;
+}
+
+.bannerContent button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  font-size: 18px;
+  font-style: inherit;
+  font-weight: 300;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.bannerContent button:hover {
+  background-color: #444;
+}
+
+/* Categories section */
+
+.categoriesSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 24px;
+}
+
+.categoriesHeading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.categoriesHeading p {
+  color: #999;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+}
+
+.categoriesHeading h2 {
+  color: #222;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.categoryCard {
+  grid-column: span 2;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+}
+
+.categoryCard:nth-child(1),
+.categoryCard:nth-child(2) {
+  grid-column: span 3;
+}
+
+.categoryCard img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+  transition: opacity 0.25s ease;
+}
+
+.categoryCard:hover img {
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    min-height: 65vh;
+    padding: 40px 6%;
+  }
+
+  .categoriesSection {
+    padding: 45px 16px;
+  }
+
+  .categoriesHeading h2 {
+    font-size: 22px;
+  }
+
+  .categoriesGrid {
+    gap: 12px;
+  }
+
+  .categoryCard:nth-child(n) {
+    grid-column: span 6;
+  }
+}
+
+/* Product section */
+
+.productsSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px 80px;
+}
+
+.productsHeading {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.productsHeading p {
+  color: #999;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+}
+
+.productsHeading h2 {
+  color: #222;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px 20px;
+}
+
+.productCard {
+  min-width: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.productImage {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.productImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.25s ease;
+}
+
+.productCard:hover .productImage img {
+  opacity: 0.6;
+}
+
+.productCard h3 {
+  color: #222;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+
+.productPrice {
+  color: #999;
+  font-size: 14px;
+  margin: 0;
+}
+
+.productsMessage {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .productsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 14px;
+  }
+
+  .productsHeading h2 {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 400px) {
+  .productsSection {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .productCard h3 {
+    font-size: 13px;
+  }
+}
+
+/* Info section */
+.infoSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 45px 3%;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.infoItem h3 {
+  margin: 0 0 10px;
+  color: #222;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.infoItem p {
+  margin: 0;
+  color: #999;
+  font-size: 14px;
+}
+
+.newsletterSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 12%;
+}
+
+.newsletterText {
+  flex: 1;
+}
+
+.newsletterText h2 {
+  margin: 0 0 12px;
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.newsletterText p {
+  margin: 0;
+  color: #999;
+  font-size: 14px;
+}
+
+.newsletterForm {
+  display: flex;
+  flex: 1;
+  max-width: 520px;
+}
+
+.newsletterForm input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 0;
+  outline: none;
+  font-size: 14px;
+}
+
+.newsletterForm input:focus {
+  border-color: #777;
+}
+
+.newsletterForm button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 0;
+  background-color: #222;
+  color: white;
+  font-size: 14px;
+  font-style: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletterForm button:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  .infoSection {
+    gap: 16px;
+    padding: 35px 5%;
+  }
+
+  .infoItem h3 {
+    font-size: 14px;
+  }
+
+  .infoItem p {
+    font-size: 12px;
+  }
+
+  .newsletterSection {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+    padding: 40px 6%;
+  }
+
+  .newsletterForm {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .infoSection {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .newsletterText h2 {
+    font-size: 21px;
+  }
+
+  .newsletterForm input,
+  .newsletterForm button {
+    padding: 12px;
+  }
+}
+
+/* Popup info */
+.productImage {
+  display: block;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.popupOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.popupModal {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: min(100%, 1000px);
+  height: min(600px, 90vh);
+  min-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.popupImage {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.popupImage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.popupInfo {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 60px 48px 40px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.popupTitle {
+  margin: 0 0 14px;
+  color: #222;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.popupPrice {
+  margin: 0 0 14px;
+  color: #2e2e2e;
+  font-size: 18px;
+}
+
+.popupDescription {
+  flex: 0 1 auto;
+  min-height: 0;
+  max-height: 180px;
+  margin: 0 0 24px;
+  color: #989898;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  text-align: justify;
+  overflow-y: auto;
+}
+
+.popupDescription p {
+  margin: 0 0 8px;
+}
+
+.popupDescription p:last-child {
+  margin-bottom: 0;
+}
+
+.popupDetailButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  width: fit-content;
+  margin-top: 0;
+  padding: 10px 16px;
+  border: none;
+  background-color: #222;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.popupDetailButton:hover {
+  background-color: #444;
+}
+
+.popupClose {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #333;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.popupClose:hover {
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .popupInfo {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popupOverlay {
+    padding: 12px;
+  }
+
+  .popupModal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60%;
+    height: min(700px, 90vh);
+  }
+
+  .popupImage img {
+    max-height: 100%;
+  }
+
+  .popupInfo {
+    padding: 20px;
+  }
+
+  .popupTitle {
+    padding-right: 24px;
+    font-size: 20px;
+  }
+
+  .popupDescription {
+    margin-bottom: 16px;
+  }
+}

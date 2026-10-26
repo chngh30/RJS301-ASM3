@@ -1,0 +1,190 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 12%;
+  background-color: white;
+  position: relative;
+  z-index: 100;
+}
+
+.navbarLeft,
+.navbarRight {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbarLogo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 3px;
+  color: #222;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #222;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.navLink:hover,
+.userDropdownButton:hover,
+.logoutButton:hover {
+  color: #c9a747;
+}
+
+.active {
+  color: #e8bf5e;
+}
+
+/* Khu vực tên người dùng */
+.userDropdown {
+  position: relative;
+}
+
+.userDropdownButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #222;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.username {
+  display: inline-block;
+  max-width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dropdownArrow {
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+
+.dropdownArrowOpen {
+  transform: rotate(180deg);
+}
+
+/* Menu xổ xuống */
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 14px);
+  right: 0;
+  z-index: 200;
+  min-width: 180px;
+  max-width: 240px;
+  padding: 14px 16px;
+  overflow-wrap: anywhere;
+  background-color: white;
+  border: 1px solid #eee;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+  color: #555;
+  font-size: 14px;
+}
+
+/* Nút Logout */
+.logoutButton {
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #222;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 24px 5%;
+  }
+
+  .navbarLeft,
+  .navbarRight {
+    gap: 14px;
+  }
+
+  .navbarLogo {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .navLink,
+  .userDropdownButton,
+  .logoutButton {
+    font-size: 14px;
+  }
+
+  .username {
+    max-width: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 20px 4%;
+    gap: 18px;
+  }
+
+  .navbarLeft,
+  .navbarRight {
+    gap: 10px;
+  }
+
+  .navbarLogo {
+    position: static;
+    transform: none;
+    order: -1;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .navbarLeft,
+  .navbarRight {
+    flex: 1;
+  }
+
+  .navbarRight {
+    justify-content: flex-end;
+  }
+
+  .navLink,
+  .userDropdownButton,
+  .logoutButton {
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .username {
+    max-width: 75px;
+  }
+
+  .dropdownMenu {
+    min-width: 140px;
+  }
+}

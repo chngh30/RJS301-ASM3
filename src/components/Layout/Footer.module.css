@@ -1,0 +1,51 @@
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 60px 8%;
+}
+
+.footerContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.footerColumn h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.footerColumn a {
+  color: #999;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  align-self: flex-start;
+}
+
+.footerColumn a:hover {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 40px 6%;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    gap: 35px;
+  }
+}

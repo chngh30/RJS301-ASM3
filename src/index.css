@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-style: normal;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

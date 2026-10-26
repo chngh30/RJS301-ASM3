@@ -1,0 +1,266 @@
+.cartPage {
+  font-family: 'Quicksand', sans-serif;
+  color: #222;
+}
+
+.cartBanner {
+  min-height: 150px;
+  padding: 30px 12%;
+  background: #F8F9FA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartBanner h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.cartBanner span {
+  color: #777;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cartContainer {
+  max-width: 1200px;
+  margin: 55px auto 80px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 0.85fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.cartMain h2,
+.cartSummary h2 {
+  margin: 0 0 25px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 12px;
+}
+
+.cartTable th {
+  padding: 16px 10px;
+  background: #F8F9FA;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cartTable td {
+  padding: 18px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.productImage {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.productName {
+  min-width: 110px;
+  font-weight: 600;
+}
+
+.itemTotal {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quantityControl button,
+.removeButton {
+  padding: 4px;
+  border: none;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+}
+
+.quantityControl button {
+  font-size: 19px;
+  line-height: 1;
+}
+
+.quantityControl button:hover,
+.removeButton:hover {
+  color: #999;
+}
+
+.quantityControl span {
+  min-width: 12px;
+}
+
+.cartActions {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.outlineButton {
+  padding: 12px 16px;
+  border: 1px solid #222;
+  background: #fff;
+  color: #222;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.outlineButton:hover {
+  background: #222;
+  color: #fff;
+}
+
+.emptyCart {
+  padding: 30px 20px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+.emptyCart p {
+  margin: 0 0 20px;
+}
+
+.cartSummary {
+  padding: 40px;
+  background: #F8F9FA;
+}
+
+.summaryRow,
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.summaryRow {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+}
+
+.summaryRow span:last-child {
+  text-align: right;
+}
+
+.summaryTotal {
+  padding: 16px 0 22px;
+  font-size: 14px;
+}
+
+.summaryTotal strong:last-child {
+  font-size: 18px;
+  text-align: right;
+}
+
+.couponForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.couponForm input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 14px 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+}
+
+.couponForm input:focus {
+  border-color: #777;
+}
+
+.couponForm button {
+  width: 100%;
+  min-height: 45px;
+  padding: 12px;
+  border: 1px solid #222;
+  background: #222;
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.couponForm button:hover {
+  background: #444;
+}
+
+.couponMessage {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .cartContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .cartSummary {
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .cartBanner {
+    min-height: 120px;
+  }
+
+  .cartBanner h1 {
+    font-size: 24px;
+  }
+
+  .cartContainer {
+    margin-top: 35px;
+    padding: 0 14px;
+    gap: 28px;
+  }
+
+  .cartActions {
+    flex-direction: column;
+  }
+
+  .outlineButton {
+    width: 100%;
+  }
+
+  .cartSummary {
+    padding: 24px 18px;
+  }
+}
