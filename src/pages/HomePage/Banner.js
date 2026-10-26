@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <section
       className={classes.banner}
-      style={{ backgroundImage: "url('/banner1.jpg')" }}
+      backgroundImage: `url('${process.env.PUBLIC_URL}/banner1.jpg')`
     >
       <div className={classes.bannerContent}>
         <p className={classes.bannerSubtitle}>NEW INSPIRATION 2026</p>
